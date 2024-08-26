@@ -58,7 +58,6 @@
 // }
 // const guests = ["Ronan", 'Ayrton', 'Maui', 'Shannon', 'Ayrton', 'Maui', 'Shannon', 'Ayrton', 'Ayrton', 'Ayrton', 'Ayrton'];
 // console.log(findCelebrity(guests));
-
 // function createKeywordIndex(documents) {
 //     const index = new Map();
 // }
@@ -66,7 +65,6 @@
 
 // function createWordIndex(sentence) {
 //     let index = new Map();
-    
 //     let words = sentence.split(' ');
 //     if (words.length > 0) {
 //         for (let word of words) {
@@ -106,7 +104,6 @@
 //     }
 //   }
 //   console.log(sumOfDigits(12345)); // Will print 15 (1+2+3+4+5)
-
 //   function countDigits(number) {
 //     if(number < 10) {
 //       return 1; // Base case: a single digit
@@ -114,9 +111,7 @@
 //       return 1 + countDigits(Math.floor(number / 10)); // Recursive case
 //     }
 //   }
-  
 //   console.log(countDigits(1302)); // Should output 4
-
 // countMap.set(num, (countMap.get(num) || 0) + 1);
 
 // function createKeywordIndex(documents) {
@@ -133,7 +128,6 @@
 //       }
 //     });
 //   });
-
 //   return index;
 // } 
 
@@ -154,7 +148,6 @@
 // function iterativeBinarySearch(arr, target) {
 //   let start = 0;
 //   let end = arr.length - 1;
-
 //   while (start <= end) {
 //       let mid = Math.floor((start + end) / 2);
 //       if (arr[mid] == target) return mid; // Found the target
@@ -164,12 +157,9 @@
 //   return -1;
 // }
 
-// 
-
 // bitonic
 // function bitonicBinarySearch(arr, target) {
 //   let start = 0, end = arr.length -1;
-
 //   while (start < end) {
 //     let mid = Math.floor((start  + end) / 2);
 //     if (arr[mid] > arr[mid +1]) {
@@ -186,7 +176,6 @@
 // }
 
 // function findAss(peak, arr, target) {
-
 //   let start = 0, end = peak;
 //   while (start <= end) {
 //     let mid = Math.floor((start + end) / 2);
@@ -218,13 +207,11 @@
 //   }
 // }
 
-
 // arr = [1, 2, 3, 4, 5, 3, 1];
 // console.log(bitonicBinarySearch(arr, 3));
 
 // function rotatedArrFindMax(arr) {
 //   let start = 0, end = arr.length -1;
-
 //   while (start < end) {
 //     let mid = Math.floor((start + end) / 2);
 //     if (arr[mid] < arr[end]) { // switch to > to find min
@@ -234,11 +221,8 @@
 //       end = mid;
 //     }
 //   }
-
 //   return arr(start);
-
 // }
-
 
 // function findPosition(arr, x) {
 //         // TODO: find peak using the implemented findPeak function
@@ -313,15 +297,6 @@
 //   }
 // }
 
-
-
-
-
-
-
-
-
-
 // function isPalindrome(input) {
 // 	// TODO: candidate code goes here
 //   input = input.toLowerCase();
@@ -369,7 +344,6 @@
 // 	}
 // }
 
-
 function merge(left, right) {
 	let resultArray = [], leftIndex = 0, rightIndex = 0;
 
@@ -378,7 +352,7 @@ function merge(left, right) {
 			resultArray.push(left[leftIndex]);
 			leftIndex++;
 		}
-		else {
+		else {ß
 			resultArray.push(right[rightIndex]);
 			rightIndex++;
 		}
@@ -387,9 +361,9 @@ function merge(left, right) {
 }
 
 function mergeSort (unsortedArray) {
-	if (unsortedArray.length <= 1 {
+	if (unsortedArray.length <= 1) {
 		return(unsortedArray);
-	})
+	};
 
 	const middle = Math.floor(unsortedArray.length / 2);
 	const left = unsortedArray.slice(0, middle) ;
