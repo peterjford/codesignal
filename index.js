@@ -344,30 +344,85 @@
 // 	}
 // }
 
-function merge(left, right) {
-	let resultArray = [], leftIndex = 0, rightIndex = 0;
+// function merge(left, right) {
+// 	let resultArray = [], leftIndex = 0, rightIndex = 0;
+// 	while (leftIndex < left.length && rightIndex < right.length) {
+// 		if (left[leftIndex] < right[rightIndex]) {
+// 			resultArray.push(left[leftIndex]);
+// 			leftIndex++;
+// 		}
+// 		else {
+// 			resultArray.push(right[rightIndex]);
+// 			rightIndex++;
+// 		}
+// 	}
+// 	return resultArray.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
+// }
 
-	while (leftIndex < left.length && rightIndex < right.length) {
-		if (left[leftIndex] < right[rightIndex]) {
-			resultArray.push(left[leftIndex]);
-			leftIndex++;
-		}
-		else {ß
-			resultArray.push(right[rightIndex]);
-			rightIndex++;
-		}
-	}
-	return resultArray.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
-}
+// function simpleMergeSort (cards) {
+// 	if (cards.length <= 1) return(cards);
+// 	const middle = Math.floor(cards.length / 2);
+// 	const leftHalf = cards.slice(0, middle);
+// 	const rightHalf = cards.slice(middle);
 
-function mergeSort (unsortedArray) {
-	if (unsortedArray.length <= 1) {
-		return(unsortedArray);
-	};
+// 	return merge(simpleMergeSort(leftHalf) , simpleMergeSort(rightHalf));
+// }
 
-	const middle = Math.floor(unsortedArray.length / 2);
-	const left = unsortedArray.slice(0, middle) ;
-	const right = unsortedArray.slice(middle);
+// const mixedDeck = [3, 2, 7, 5, 4, 9, 6, 1, 8];
+// console.log(simpleMergeSort(mixedDeck));
 
-	return merge(mergeSort(left) , mergeSort(right));
-}
+// function merge(left, right) {
+//     let merged = [], i = 0, j = 0;
+//     while (i < left.length && j < right.length) {
+//         if (left[i] < right[j]) {
+//             merged.push(left[i++]);
+//         } else {
+//             merged.push(right[j++]);
+//         }
+//     }
+//     return merged.concat(left.slice(i)).concat(right.slice(j));
+// }
+
+// function mergeSort(cards) {
+//     if (cards.length <= 1) return cards;
+//     const middle = Math.floor(cards.length / 2);
+//     const leftHalf = cards.slice(0, middle);
+//     const rightHalf = cards.slice(middle);
+//     return merge(mergeSort(leftHalf), mergeSort(rightHalf));
+// }
+
+// const miniDeck = [5, 2, 10, 3];
+// let sortedDeck = mergeSort(miniDeck);
+// console.log(sortedDeck);
+
+// function merge(left, right) {
+//     let resultArray = [], leftIndex = 0, rightIndex = 0;
+
+//     // Sorting and merging process
+//     while(leftIndex < left.length && rightIndex < right.length) {
+//         if(left[leftIndex] < right[rightIndex]) {
+//             resultArray.push(left[leftIndex]);
+//             leftIndex++;
+//         } else {
+//             resultArray.push(right[rightIndex]);
+//             rightIndex++;
+//         }
+//     }
+// 	return resultArray.concat(left.slice(leftIndex)).concat(right.slice(rightIndex));
+// }
+// function simpleMergeSort(cards) {
+//     if (cards.length <= 1) return cards;
+//     const middle = Math.floor(cards.length / 2);
+//     const leftHalf = cards.slice(0, middle);
+//     const rightHalf = cards.slice(middle);
+//     return merge(simpleMergeSort(leftHalf), simpleMergeSort(rightHalf));
+// }
+// // A deck with some cards mixed up
+// const mixedDeck = [3, 2, 7, 5, 4, 9, 6, 1, 8];
+// console.log(simpleMergeSort(mixedDeck));
+
+let friends = ["Tom", "Jerry", "Mickey", "Donald"];
+friends.sort();
+
+console.log(friends); 
+// Output: ["Donald", "Jerry", "Mickey", "Tom"]
