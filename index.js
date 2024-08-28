@@ -426,3 +426,17 @@ friends.sort();
 
 console.log(friends); 
 // Output: ["Donald", "Jerry", "Mickey", "Tom"]
+
+// let numbers = [5, 1, 8, 3];
+// numbers.sort();
+// console.log(numbers); // output: [1, 2, 5, 8]
+
+// let numbers = [15, 1, 100, 3];
+// numbers.sort((a, b) => a - b); // This will sort numbers in ascending order
+
+// console.log(numbers); // Output: [1, 3, 15, 100]
+
+let scores = [60, 90, 82, 100, 56];
+scores.sort((a, b) => b - a);
+
+console.log(scores); // Output: [100, 90, 82, 60, 56]
