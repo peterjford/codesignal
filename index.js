@@ -421,10 +421,10 @@
 // const mixedDeck = [3, 2, 7, 5, 4, 9, 6, 1, 8];
 // console.log(simpleMergeSort(mixedDeck));
 
-let friends = ["Tom", "Jerry", "Mickey", "Donald"];
-friends.sort();
+// let friends = ["Tom", "Jerry", "Mickey", "Donald"];
+// friends.sort();
 
-console.log(friends); 
+// console.log(friends); 
 // Output: ["Donald", "Jerry", "Mickey", "Tom"]
 
 // let numbers = [5, 1, 8, 3];
@@ -436,7 +436,67 @@ console.log(friends);
 
 // console.log(numbers); // Output: [1, 3, 15, 100]
 
-let scores = [60, 90, 82, 100, 56];
-scores.sort((a, b) => b - a);
+// let scores = [60, 90, 82, 100, 56];
+// scores.sort((a, b) => b - a);
 
-console.log(scores); // Output: [100, 90, 82, 60, 56]
+// console.log(scores); // Output: [100, 90, 82, 60, 56]
+
+// let students = [
+// 	{ name: "Tom", grade: 90 },
+// 	{ name: "Jerry", grade: 95 },
+// 	{ name: "Mickey", grade: 90 },
+// 	{ name: "Donald", grade: 95 }
+//   ];
+
+//   students.sort((a, b) => {
+// 	if (a.grade < b.grade) return -1;
+// 	if (a.grade > b.grade) return 1;
+// 	// grades are the same
+// 	if (a.name < b.name) return -1;
+// 	if (a.name > b.name) return 1;
+
+// 	return 0;
+// });
+
+// console.log(students);
+
+// let products = [
+// 	{ name: "Laptop", price: 1200 },
+// 	{ name: "Phone", price: 800   },
+// 	{ name: "Tablet", price: 600  } 
+// ];
+
+// products.sort((a, b) => a.price - b.price);
+// console.log(products);
+
+// let products = [
+// 	{ name: "Laptop", price: 1200 },
+// 	{ name: "Phone", price: 800 },
+// 	{ name: "Tablet", price: 500 },
+// 	{ name: "Earbuds", price: 300 }
+//   ];
+  
+//   // TODO: Sort products alphabetically by name in ascending order
+//   products.sort((a, b) => {
+// 	if (a.name > b.name) return 1;
+// 	if (a.name < b.name) return -1;
+// 	return 0;
+//   });
+//   console.log(products); 
+let products = [
+	{ category: "Electronics", price: 299 },
+	{ category: "Books", price: 19 },
+	{ category: "Electronics", price: 199 },
+	{ category: "Books", price: 29 }
+  ];
+  
+  products.sort((a, b) => {
+	if (a.category > b.category) return 1;
+	if (a.category < b.category) return -1;
+	if (a.price > b.price) return 1;
+	if (a.price < b.price) return -1;
+	return 0;
+	// TODO: sort by category first, and then by price in case of a tie
+  });
+  
+  console.log(products);
