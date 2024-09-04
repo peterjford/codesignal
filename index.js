@@ -572,3 +572,35 @@
 // }
 
 // console.log(countInversions([4, 2, 2, 1, 3]));
+
+// Stack
+
+// 
+
+// let stack = [];
+// stack.push(1);
+// stack.push(2);
+// stack.push(3);
+// console.log(stack.pop()); // 3
+// console.log(stack[stack.length - 1]); // 2
+
+class BookStack {
+    constructor() {
+      this.books = [];
+    }
+    addBook(book) {
+      this.books.push(book);
+    }
+    sellBook() {
+      return this.books.length == 0 ? "No more books!" : this.books.pop();
+    }
+    checkTopBook() {
+      return this.books[this.books.length - 1] || "Stack is empty";
+    }
+  }
+  
+  let bookstoreStack = new BookStack();
+  bookstoreStack.addBook("The Great Gatsby");
+  bookstoreStack.addBook("1984");
+  console.log(bookstoreStack.sellBook()); // "1984"
+  console.log(bookstoreStack.checkTopBook()); // "The Great Gatsby"
